@@ -1,0 +1,407 @@
+@charset "UTF-8";
+
+* {
+  font-family: "微軟正黑體";
+  word-break: break-all;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #e3fdfd;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  position: fixed;
+  background-color: #71c9ce;
+  z-index: 999;
+}
+
+.header .titleText {
+  font-size: 30px;
+  margin-left: 20px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #e3fdfd;
+  font-weight: 900;
+}
+
+.header .helloText {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  right: 300px;
+  transform: translateY(-50%);
+  color: #e3fdfd;
+  font-weight: 900;
+}
+
+.header .login {
+  position: absolute;
+  right: 200px;
+}
+
+.btnControl {
+  margin-top: 60px;
+}
+
+.changePage {
+  color: #e3fdfd;
+  background-color: #71c9ce;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 650px;
+  right: 35%;
+  transform: translateX(-50%);
+}
+
+.changePage.right {
+  right: 50%;
+}
+
+.changePage.user {
+  bottom: initial;
+  top: 5%;
+}
+
+.titleBtn {
+  color: #71c9ce;
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  font-weight: 800;
+  padding: 10px 20px;
+  background-color: #e3fdfd;
+  border-radius: 10px;
+}
+
+.titleBtn.build_guild {
+  position: fixed;
+  top: 30%;
+  right: 5%;
+  background-color: #71c9ce;
+  color: #e3fdfd;
+}
+
+.titleBtn.add_content,
+.titleBtn.back_main {
+  right: 60px;
+  top: 5%;
+  background-color: #71c9ce;
+  color: #e3fdfd;
+}
+
+.titleBtn.back_main {
+  right: 160px;
+}
+
+.titleBtn.text_btn {
+  top: auto;
+  bottom: -5px;
+  right: 0px;
+  padding: 3px 10px;
+  font-size: 14px;
+  border: solid 1px #71c9ce;
+  cursor: pointer;
+}
+
+.titleBtn.del_btn {
+  right: 60px;
+}
+
+.titleBtn.form {
+  position: static;
+  margin: 0px 30px 0px 30px;
+  padding: 10px 30px;
+  color: #00bdaa;
+  border: none;
+  font-size: 18px;
+  transform: none;
+  cursor: pointer;
+}
+
+.titleBtn.center {
+  right: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px 30px;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.titleBtn:hover {
+  transition: 0.5s;
+  background-color: #a6e3e9;
+  color: #e3fdfd;
+}
+
+.container {
+  padding: 100px 30% 100px 15%;
+}
+
+.container img {
+  width: 50px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.container .user_info {
+  width: 100%;
+  text-align: center;
+}
+
+.user_text {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #00bdaa;
+  font-size: 18px;
+}
+
+.container .show_list {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 3px #71c9ce;
+  background-color: #cbf1f5;
+}
+
+.container .show_list.user_page {
+  margin-top: 30px;
+}
+
+.container .show_list.login {
+  width: 600px;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .show_list.login label {
+  color: #00bdaa;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.container .show_list.login .setCol {
+  position: relative;
+}
+
+.container .show_list.login .setCol input.text {
+  margin: 20px 0 20px 0;
+  border: solid 2px #71c9ce;
+  height: 40px;
+  width: 400px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.container .show_list.login .setCol textarea {
+  border: solid 2px #71c9ce;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 24px;
+  height: 250px;
+  width: 400px;
+  resize: none;
+}
+
+.container .show_list li {
+  padding: 20px;
+  list-style: none;
+  border-bottom: solid 1px #71c9ce;
+  position: relative;
+}
+
+.container .show_list li h2 {
+  color: #00bdaa;
+}
+
+.container .show_list li .title {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-size: 24px;
+  color: #00bdaa;
+  font-weight: 800;
+  border-bottom: solid 1px #71c9ce;
+}
+
+.container .show_list li .name {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  font-size: 18px;
+  color: #00bdaa;
+  font-weight: 800;
+  border-bottom: solid 1px #71c9ce;
+}
+
+.container .show_list li .time {
+  position: absolute;
+  right: 120px;
+  bottom: 10px;
+  font-size: 14px;
+  color: #71c9ce;
+  font-weight: 800;
+}
+
+.alert {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  background-color: #6f0000;
+  color: white;
+  padding: 0 20px 0 20px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
+
+
+/* 5/25後新增 */
+.mission_table {
+  position: fixed;
+  top: 20%;
+  left: 20px;
+  background-color: #71c9ce;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.user_table {
+  position: fixed;
+  top: 20%;
+  left: auto;
+  right: 20px;
+  background-color: #71c9ce;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.text_title {
+  color: #00bdaa;
+  text-align: center;
+  background-color: #cbf1f5;
+  border-radius: 15px;
+}
+
+.mission {
+  background-color: #cbf1f5;
+  border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.mission_table .mission .user_text {
+  color: #00bdaa;
+  font-weight: 900;
+}
+
+.mission_table .mission .form {
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+/* 5/26 新增 */
+.fighting {
+  /* position: relative; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.fighting p {
+  color: #00bdaa;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.fighting .btnControl {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+
+.fight_btns {
+  margin-top: 100px;
+  margin-bottom: -80px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.show_list.fighting .fight_btns {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.show_list.fighting .fight_btns.meet {
+  top: 80%;
+}
+
+.fight_btn {
+  position: static;
+  color: #e3fdfd;
+  background-color: #71c9ce;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.attak {
+  height: 100%;
+  display: flex;
+}
+
+.attak .monster {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.attak .user {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
